@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SteadyStudy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h1 class="logo">
+            📚 SteadyStudy
+        </h1>
+
+        <h2 id="welcome">
+            Welcome
+        </h2>
+
+        <nav>
+
+            <ul>
+
+                <li>🏠 Dashboard</li>
+
+                <li>🎯 Daily Goal</li>
+
+                <li>📖 IELTS</li>
+
+                <li>🇰🇷 TOPIK</li>
+
+                <li>🎓 GKS</li>
+
+                <li>📚 Vocabulary</li>
+
+                <li>📅 Calendar</li>
+
+                <li>⏰ Pomodoro</li>
+
+                <li>📊 Analytics</li>
+
+                <li>⚙ Settings</li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <header>
+
+            <h1>
+                AI Study Planner
+            </h1>
+
+            <p id="today"></p>
+
+            <button id="themeBtn">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <!-- Motivation -->
+
+        <section class="card">
+
+            <h2>
+                ✨ Daily Motivation
+            </h2>
+
+            <p id="quote"></p>
+
+        </section>
+
+        <!-- Daily Goal -->
+
+        <section class="card">
+
+            <h2>
+                🎯 Daily Goal
+            </h2>
+
+            <input
+                id="goalInput"
+                type="text"
+                placeholder="Write today's goal...">
+
+            <button id="saveGoal">
+
+                Save Goal
+
+            </button>
+
+            <p id="goalText"></p>
+
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat">
+
+                <h2 id="totalTasks">0</h2>
+
+                <p>Total Tasks</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h2 id="completedTasks">0</h2>
+
+                <p>Completed</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h2 id="streak">1</h2>
+
+                <p>🔥 Streak</p>
+
+            </div>
+
+        </section>
+
+        <!-- Add Task -->
+
+        <section class="card">
+
+            <h2>
+                ➕ Add Task
+            </h2>
+
+            <select id="category">
+
+                <option value="IELTS">
+                    📖 IELTS
+                </option>
+
+                <option value="TOPIK">
+                    🇰🇷 TOPIK
+                </option>
+
+                <option value="GKS">
+                    🎓 GKS
+                </option>
+
+                <option value="Vocabulary">
+                    📚 Vocabulary
+                </option>
+
+                <option value="Personal">
+                    💜 Personal
+                </option>
+
+            </select>
+
+            <input
+                id="taskInput"
+                type="text"
+                placeholder="Enter your task...">
+
+            <button id="addBtn">
+
+                Add Task
+
+            </button>
+
+        </section>
+
+        <!-- Today's Tasks -->
+
+        <section class="card">
+
+            <h2>
+                📋 Today's Tasks
+            </h2>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+            <p id="progressText">
+                0 / 0 Completed
+            </p>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+        <!-- Pomodoro -->
+
+        <section class="card">
+
+            <h2>
+                ⏰ Pomodoro Timer
+            </h2>
+
+            <h1 id="timer">
+                25:00
+            </h1>
+
+            <button id="startBtn">
+                ▶ Start
+            </button>
+
+            <button id="pauseBtn">
+                ⏸ Pause
+            </button>
+
+            <button id="resetBtn">
+                🔄 Reset
+            </button>
+
+        </section>
+
+        <!-- Countdown -->
+
+        <section class="card">
+
+            <h2>
+                📅 Exam Countdown
+            </h2>
+            <div id="countdown"></div>
+
+        </section>
+
+        <!-- Vocabulary -->
+
+        <section class="card">
+
+            <h2>
+                📚 Vocabulary
+            </h2>
+
+            <input
+                id="wordInput"
+                type="text"
+                placeholder="New word...">
+
+            <button id="addWordBtn">
+
+                Add Word
+
+            </button>
+
+            <ul id="wordList"></ul>
+
+        </section>
+
+        <!-- Calendar -->
+
+        <section class="card">
+
+            <h2>
+                📅 Study Calendar
+            </h2>
+
+            <input
+                type="date"
+                id="studyDate">
+
+            <input
+                type="text"
+                id="calendarTask"
+                placeholder="Study plan...">
+
+            <button id="saveDateTask">
+
+                Save
+
+            </button>
+
+            <ul id="calendarList"></ul>
+
+        </section>
+
+        <!-- Analytics -->
+
+        <section class="card">
+
+            <h2>
+                📊 Analytics
+            </h2>
+
+            <p>
+                Tasks:
+                <span id="analyticsTasks">0</span>
+            </p>
+
+            <p>
+                Words:
+                <span id="analyticsWords">0</span>
+            </p>
+
+            <p>
+                Progress:
+                <span id="analyticsProgress">0%</span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
