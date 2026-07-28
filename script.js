@@ -28,6 +28,10 @@ const streak = document.getElementById("streak");
 
 const themeBtn = document.getElementById("themeBtn");
 
+const clickSound = { play() {} };
+const successSound = { play() {} };
+const deletesound = { play() {} };
+
 // ---------- Date ----------
 
 today.textContent =
